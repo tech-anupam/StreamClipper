@@ -1,0 +1,11 @@
+name = "streamclipper-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Bindings are configured via wrangler dashboard or .dev.vars for local dev
+# [[ r2_buckets ]]
+# binding = "CLIPS_BUCKET"
+# bucket_name = "streamclipper-clips"

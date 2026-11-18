@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.turbo/
+.wrangler/
+.dev.vars
+.env
+.env.local
+*.log
+*.mp4
+*.ts.bak
+
+# Ephemeral pipeline data
+buffers/
+clips/
+tmp/
+**/buffers/
+**/clips/
+**/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
