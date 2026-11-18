@@ -1,0 +1,27 @@
+{
+  "name": "streamclipper",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@11.17.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @streamclipper/web dev",
+    "dev:api": "pnpm --filter @streamclipper/api dev",
+    "dev:worker": "pnpm --filter @streamclipper/worker dev",
+    "clip": "pnpm --filter @streamclipper/shared build && pnpm --filter @streamclipper/worker cli",
+    "clip:auto": "pnpm --filter @streamclipper/shared build && pnpm --filter @streamclipper/worker cli:auto",
+    "clip:time": "pnpm --filter @streamclipper/shared build && pnpm --filter @streamclipper/worker cli:time",
+    "build": "pnpm -r build",
+    "build:shared": "pnpm --filter @streamclipper/shared build",
+    "test": "pnpm -r test",
+    "test:shared": "pnpm --filter @streamclipper/shared test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @streamclipper/api db:generate",
+    "db:migrate": "pnpm --filter @streamclipper/api db:migrate",
+    "clean": "pnpm -r exec rm -rf dist node_modules .turbo"
+  }
+}
